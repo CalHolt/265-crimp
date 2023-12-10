@@ -161,6 +161,7 @@ function addHold(e) {
     stroke: blue;
   }
   button {
+    color: #E6E0D0;
     padding: 1rem;
     background-color: #5C2D1E;
     border-color: #D66737;
