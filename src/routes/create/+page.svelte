@@ -58,6 +58,7 @@ function addHold(e) {
   
 </script>
 <NavBar />
+<h1>Create a route</h1>
 <div class="img-overlay-wrap">
   <img src="../images/IMG_3584.jpeg" alt="sss">
   <svg xmlns="http://www.w3.org/2000/svg" width="1170" height="1014">
@@ -67,38 +68,71 @@ function addHold(e) {
   </svg>
 </div>
 <div class="container">
-<form on:submit|preventDefault={submitData}>
+  
+<form class="subscribe-form" on:submit|preventDefault={submitData}>
+<div class="field">
   <label for="name">Name:</label>
-  <input type="text" id="slug" bind:value={slug} required />
-
+  <input type="text" id="slug" class="subscribe-input" bind:value={slug} required />
+</div>
+<div class="field">
   <label for="description">Author:</label>
-  <input id="description" bind:value={description} required />
-
+  <input id="description" class="subscribe-input" bind:value={description} required />
+</div> 
+<div class="field">
   <label for="grade">Grade:</label>
-  <input type="number" id="grade" bind:value={grade} min="0" max="100" required />
-
-  <button  type="submit">Submit</button>
+  <input class="subscribe-input" type="number" id="grade" bind:value={grade} min="0" max="100" required />
+</div>
+  <button class="subscribe-btn" type="submit">Submit</button>
 </form>
 
 </div>
 <Footer />
 <style>
+  h1 {
+    font-family: 'Fugaz One', sans-serif;
+    text-align: center;
+    color: #D66737;
+  }
   .img-overlay-wrap {
     display: grid;
    justify-items: center;
     align-items: center;
   }
-
-  form {
-    padding: 1rem;
+  
+  .subscribe-form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  label {
+    font-size: 30px;
+    font-family: 'Fugaz One', sans-serif;
+  }
+  .field {
+    display: flex;
+    align-items: center;
   }
 
-input {
-  height: 50px;
-  position: relative;
-  width: 400px;
+  .subscribe-input {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #D0943F;
+    
+    
+    max-width: 320px;
+    border-radius: 20px;
+    box-shadow: 10px 10px #5C2D1E ;
+    border: 3px solid #D66737 ;
   
-}
+    color: #E6E0D0;
+    text-shadow:2px 2px #5C2D1E; 
+    text-align: center;  
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   
   svg {
     
@@ -116,6 +150,7 @@ input {
   }
   .container{
     align-items: center;
+
   }
   .hold.selected {
     stroke: red;
@@ -125,5 +160,15 @@ input {
   .hold {
     stroke: blue;
   }
-  
+  button {
+    padding: 1rem;
+    background-color: #5C2D1E;
+    border-color: #D66737;
+    border-radius: 15%;
+    box-shadow: 5px 5px #D0943F;
+  }
+  button:hover {
+    background-color: #D0943F;
+    box-shadow: 5px 5px #5C2D1E;
+  }
   </style>
