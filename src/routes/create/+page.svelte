@@ -1,19 +1,15 @@
 <script>
+  import supabase from '$lib/supabaseClient.js'
   import NavBar from '../../lib/components/NavBar.svelte';
   import Footer from '../../lib/components/Footer.svelte';
   const outputArr = [];
   import { climbingHolds} from '$lib/data.js' 
   
-   
-  import { createClient } from '@supabase/supabase-js';
   let slug = '';
   let description = '';
   let grade = 0;
   let new_route = outputArr;
 
-  const supabaseUrl = 'https://tpldobulmqzpspkgjadf.supabase.co';
-  const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRwbGRvYnVsbXF6cHNwa2dqYWRmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDIwODI5MjgsImV4cCI6MjAxNzY1ODkyOH0.JgEqtF9bK8re85UAQG88l7k_lnBAV8E7uvDxf-ahE08';
-  const supabase = createClient(supabaseUrl, supabaseKey);
 
   const submitData = async () => {
     const tableName = 'route';
