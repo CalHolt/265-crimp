@@ -38,6 +38,7 @@
 <p>CRIMP is a spray wall web application that allows users to create their very own routes on their gyms spray wall. Not only can a user make a unique route they can also view every route every user has created. I have designed this application because I am a climber. I love climbing indoors and outdoors but while climbing indoors my favourite wall to climb is the spray wall. I found myself drawn towards the creative aspect of both web development and climbing alike, so I decided to combine these two passions into one. Welcome to CRIMP the place where I have done just that. By heading to the create page you can click on holds and create your very own route. Attach a route name, your name and a grade to your route and publish it for all to see! If you click on explore you can view all published climbs that other users have created and give them a try!
 </p>
 <p>Happy climbing, <br> Cal</p>
+
 </div>
 </div>
 <Footer />
@@ -65,8 +66,9 @@ h1{
   align-items: center;
   height: 65vh;
   text-align: center;
+  
 
-  background-image: url(./images/71.jpg);
+  background-image: url(../images/71.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 35% 35%;
