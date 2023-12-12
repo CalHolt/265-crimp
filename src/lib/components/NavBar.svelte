@@ -2,7 +2,7 @@
   <div><h1>CRIMP</h1></div>
   <nav id="nav-container">
     <ul class="nav-list">
-      <li><a href="/">Profile</a></li>
+      <li><a href="/">Home</a></li>
       <li><a href="/create">Create</a></li>
       <li><a href="/explore">Explore</a></li>
     </ul>

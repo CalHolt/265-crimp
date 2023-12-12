@@ -72,7 +72,6 @@ h1{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 35% 35%;
-  background-blend-mode: darken;
 }
 .card-container {
   display: flex;
