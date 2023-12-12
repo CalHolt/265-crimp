@@ -68,7 +68,7 @@ h1{
   text-align: center;
   
 
-  background-image: url(../images/71.jpg);
+  background-image: url($images/71.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 35% 35%;
